@@ -8,9 +8,10 @@ collections:
   - name: episodes
     label: Episodes
     label_singular: Episode
-    folder: src/data/episodes
+    folder: src/pages/episodes
     create: true
     extension: mdx
+    format: frontmatter
     fields:
     - label: Title
       name: title
@@ -31,4 +32,4 @@ collections:
     - label: Conent
       name: body
       widget: body
-      default: false
+      required: true

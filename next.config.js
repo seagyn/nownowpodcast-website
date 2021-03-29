@@ -1,3 +1,13 @@
-const withMDX = require('@next/mdx')()
+const remarkHtml = require("remark-html");
+const remarkFrontmatter = require("remark-frontmatter");
 
-module.exports = withMDX()
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [remarkHtml, remarkFrontmatter],
+  },
+});
+
+module.exports = withMDX({
+  pageExtensions: ["js", "jsx", "md", "mdx"]
+});
