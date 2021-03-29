@@ -28,3 +28,7 @@ collections:
       name: published
       widget: boolean
       default: false
+    - label: Conent
+      name: body
+      widget: body
+      default: false
