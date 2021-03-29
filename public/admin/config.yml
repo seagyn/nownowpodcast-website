@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: seagyn/nownowpodcast-website
+media_folder: public/media
+public_folder: /media
+collections:
+  - name: "episodes"
+    label: "Episodes"
+    label_singular: "Episode"
+    folder: src/data/episodes
+    create: true
+    fields:
+    - label: "Title"
+      name: "title"
+      widget: "string"
+      required: true
+    - label: "Episode Embed URL"
+      name: "episode_embed_url"
+      widget: "string"
+      required: true
+    - label: "Publish Date"
+      name: "publish_date"
+      widget: "datetime"
+      required: true
+    - label: "Published"
+      name: "published"
+      widget: "boolean"
+      default: false
