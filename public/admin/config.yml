@@ -8,7 +8,7 @@ collections:
   - name: episodes
     label: Episodes
     label_singular: Episode
-    folder: src/pages/episodes
+    folder: src/data/episodes
     create: true
     extension: mdx
     fields:
