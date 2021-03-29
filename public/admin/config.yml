@@ -31,5 +31,5 @@ collections:
       default: false
     - label: Conent
       name: body
-      widget: body
+      widget: markdown
       required: true
